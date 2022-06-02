@@ -1,0 +1,50 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  _id: String!
+
+  """User userName """
+  userName: String!
+
+  """User password """
+  password: String!
+
+  """User email """
+  email: String!
+}
+
+type LoggedUserOutput {
+  """Generated access_token of the user"""
+  token: String!
+}
+
+type Query {
+  users: [User!]!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInput!): User!
+  register(register: CreateUserInput!): LoggedUserOutput!
+  login(login: LoginInput!): LoggedUserOutput!
+}
+
+input CreateUserInput {
+  """userName of the user"""
+  userName: String!
+
+  """email of the user"""
+  email: String!
+
+  """password of the user"""
+  password: String!
+}
+
+input LoginInput {
+  """email of the user"""
+  email: String!
+
+  """password of the user"""
+  password: String!
+}
