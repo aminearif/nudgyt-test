@@ -1,6 +1,6 @@
 ## Description
 
-[Nest](https://github.com/nestjs/nest) Appplication for user register & authentication.
+[Nest](https://github.com/nestjs/nest) Appplication for user register & authentication using both RESTApi and GraphQL API server
 
 ## Installation
 
@@ -19,6 +19,17 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+
+## User end Test
+
+```bash
+# for Rest Api endpoint go to this link
+$ http://localhost:3000/api/
+
+# for graphql apollo playground go to this link
+$ http://localhost:3000/graphql
+
 ```
 
 ## Test
