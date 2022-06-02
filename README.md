@@ -23,14 +23,12 @@ $ npm run start:prod
 
 ## User end Test
 
-```bash
 # for Rest Api endpoint go to this link
-$ http://localhost:3000/api/
+(http://localhost:3000/api/)
 
 # for graphql apollo playground go to this link
-$ http://localhost:3000/graphql
+(http://localhost:3000/graphql)
 
-```
 
 ## Test
 
