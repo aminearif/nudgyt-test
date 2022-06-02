@@ -10,7 +10,7 @@ $ npm install
 
 ## Setup
 
-Create a file named [.env] & inspire code from [.env.example] to adjust to your own batabase if needed
+Create a file named [.env] & inspire code from [.env.example] to adjust to your own database if needed
 
 ## Running the app
 
