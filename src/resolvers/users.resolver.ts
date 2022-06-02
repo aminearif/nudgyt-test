@@ -20,6 +20,7 @@ export class UsersResolver {
     return this.userService.create(createUserInput)
   }
 
+  // return token without user object - different from Rest api post  request
   @Mutation(() => LoggedUserOutput)
   async register (@Args('register') createUserInput: CreateUserInput) {
     const user = await this.userService.create(createUserInput)
@@ -31,6 +32,7 @@ export class UsersResolver {
     return { token }
   }
 
+  // return token without user object - different from Rest api post  request
   @Mutation(() => LoggedUserOutput)
   async login (@Args('login') loginInput: LoginInput) {
     const user = await this.userService.findByLogin(loginInput)
@@ -42,6 +44,7 @@ export class UsersResolver {
     return { token }
   }
 
+  // You need the pass token in header otherwise th request will fail
   @UseGuards(JwtAuthGuard)
   @Query(() => [User], { name: 'users' })
   findAll () {

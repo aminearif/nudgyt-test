@@ -8,6 +8,10 @@
 $ npm install
 ```
 
+## Setup
+
+Create a file named [.env] & inspire code from [.env.example] to adjust to your own batabase if needed
+
 ## Running the app
 
 ```bash
